@@ -205,7 +205,7 @@ $(document).ready(function () {
   google.maps.event.addDomListener(window, 'load', init);
 
   function init() {
-    var myLatlng = new google.maps.LatLng(41.850033, -87.6500523);
+    var myLatlng = new google.maps.LatLng(19.388703, -99.171766);
     var mapOptions = {
         zoom: 15,
         scrollwheel: false,
@@ -222,7 +222,7 @@ $(document).ready(function () {
     var marker = new google.maps.Marker({
         position: myLatlng,
         map: map,
-        title: 'KreFolio!'
+        title: 'Map'
     });
   }
 });
