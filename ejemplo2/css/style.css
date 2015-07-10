@@ -150,7 +150,7 @@ font-weight: 900;
 }
 
 .color2{
-    color: #b48484; <!--Color del titulo principal-->
+    color: #722F37; <!--Color del titulo principal-->
 }
 
 a.fa.fa-angle-down {
@@ -220,7 +220,7 @@ ul.about-list li span{
 }
 
 .section-title.center hr {
-	border-top: 4px solid rgb(141, 8, 239);
+	border-top: 4px solid rgb(114, 47, 55);
 	width: 40px;
 	text-align: center;
 	margin-top: 10px;
