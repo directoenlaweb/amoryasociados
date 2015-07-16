@@ -39,7 +39,9 @@
           <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
       </head>
+
       <body>
+
         <!-- Nav
         ==========================================-->
         <nav id="tf-menu" class="navbar navbar-default navbar-fixed-top">
@@ -336,35 +338,35 @@
                         </div>
                         <!-- End Google Map -->
 
-                        <form>
+                        <form name="enviarCorreo"method="post" action="correo.php">
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <label for="InputName1">Nombre</label>
-                                        <input type="text" class="form-control" id="InputName1" placeholder="Ingre su nombre" required>
+                                        <label for="nombre">Nombre</label>
+                                        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingre su nombre" required>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="exampleInputEmail1">Email</label>
-                                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Ingrese email" required>
+                                        <label for="email">Email</label>
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="Ingrese email" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="exampleInputPassword1">Teléfono</label>
-                                        <input type="tel" class="form-control" id="exampleInputPassword1" placeholder="Telefono" required>
+                                        <label for="telefono">Teléfono</label>
+                                        <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Telefono" required>
                                     </div>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="exampleInputEmail1">Mensaje</label>
-                                <textarea class="form-control" rows="3" required></textarea>
+                                <label for="mensaje">Mensaje</label>
+                                <textarea class="form-control" rows="3" required id="mensaje" name="mensaje"></textarea>
                             </div>
                             
-                            <button type="submit" class="btn tf-btn btn-default">Enviar</button>
+                            <button type="submit" class="btn tf-btn btn-default" onclick="validar()">Enviar</button>
                         </form>
 
                     </div>
@@ -372,7 +374,7 @@
 
             </div>
         </div>
-
+<iframe width="0" height="0" style="border:solid 0px" id="iframe" > </iframe> 
         <nav id="footer">
             <div class="container">
                 <div class="pull-left fnav">
@@ -443,6 +445,8 @@
   <!-- Javascripts
   ================================================== -->
   <script type="text/javascript" src="js/main.js"></script>
+
+  <script type="text/javascript" src="js/bloqueo.js"></script>
 
       </body>
     </html>
